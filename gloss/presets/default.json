@@ -1,0 +1,12 @@
+{
+  "id": "default",
+  "name": "默认",
+  "match": {"exe": "", "title": ""},
+  "source_lang": "auto",
+  "target_lang": "zh-CN",
+  "regions": [],
+  "display": {"mode": "inplace", "background": "auto", "opacity": 1.0, "float_opacity": 0.72, "font_scale": 1.0, "font_family": ""},
+  "filter": {"min_conf": 0.6, "min_height": 14, "ignore": []},
+  "glossary": [],
+  "prompt": ""
+}

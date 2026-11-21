@@ -1,0 +1,49 @@
+[project]
+name = "gloss"
+version = "0.1.0"
+description = "Gloss — 实时游戏文本翻译悬浮层：截屏 → OCR → 翻译 → 按原文排版覆盖"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "PySide6-Essentials>=6.8",
+    "numpy>=2.0",
+    "opencv-python>=4.10",
+    "windows-capture>=2.0",
+    "mss>=9.0",
+    "httpx>=0.27",
+    "anthropic>=1.0",
+    "rapidocr>=3.0",
+    "ctranslate2>=4.4",
+    "sentencepiece>=0.2",
+    "psutil>=6.0",
+    "onnxruntime-directml>=1.20",
+    "winrt-runtime>=3.0",
+    "winrt-Windows.Foundation>=3.0",
+    "winrt-Windows.Foundation.Collections>=3.0",
+    "winrt-Windows.Globalization>=3.0",
+    "winrt-Windows.Graphics.Imaging>=3.0",
+    "winrt-Windows.Media.Ocr>=3.0",
+    "winrt-Windows.Storage.Streams>=3.0",
+]
+
+[project.optional-dependencies]
+oneocr = ["oneocr>=1.0"]
+
+[project.scripts]
+gloss = "gloss.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gloss"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

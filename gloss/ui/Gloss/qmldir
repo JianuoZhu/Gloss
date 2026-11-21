@@ -1,0 +1,24 @@
+module Gloss
+singleton Theme 1.0 Theme.qml
+Icon 1.0 Icon.qml
+GButton 1.0 GButton.qml
+GField 1.0 GField.qml
+GCombo 1.0 GCombo.qml
+GSwitch 1.0 GSwitch.qml
+GSlider 1.0 GSlider.qml
+GSegmented 1.0 GSegmented.qml
+GColor 1.0 GColor.qml
+GHotkey 1.0 GHotkey.qml
+ModeCard 1.0 ModeCard.qml
+Glow 1.0 Glow.qml
+EnginePicker 1.0 EnginePicker.qml
+Card 1.0 Card.qml
+FormRow 1.0 FormRow.qml
+ModelInstall 1.0 ModelInstall.qml
+Metric 1.0 Metric.qml
+NavRail 1.0 NavRail.qml
+PageScroll 1.0 PageScroll.qml
+HomePage 1.0 HomePage.qml
+ProfilePage 1.0 ProfilePage.qml
+GlossaryPage 1.0 GlossaryPage.qml
+EnginePage 1.0 EnginePage.qml
