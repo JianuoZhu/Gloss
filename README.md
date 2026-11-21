@@ -220,6 +220,10 @@ $env:UV_PROJECT_ENVIRONMENT = "$env:LOCALAPPDATA\Gloss\venv"; uv run python test
 - 打包版没有数字签名，也只在开发机上跑过自检，没有在别的电脑上装过。
 - API 密钥明文存在 `%APPDATA%\Gloss\settings.json`；不想存盘可以留空，改用环境变量 `ANTHROPIC_API_KEY`。
 
+## 许可
+
+Gloss 自己的代码按 [MIT 许可证](LICENSE) 发布。它用到的第三方组件和可选下载的模型各有各的许可证（其中 NLLB-200 模型禁止商用），见下一节。
+
 ## 第三方组件
 
 Gloss 用到的开源组件、可选下载的模型和它们的许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

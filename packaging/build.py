@@ -89,7 +89,7 @@ def main() -> int:
             removed += model.stat().st_size
             model.unlink()
     print(f"pruned unused OCR models: {removed / 1e6:.0f} MB", flush=True)
-    for name in ("README.md", "THIRD_PARTY_NOTICES.md"):
+    for name in ("README.md", "LICENSE", "THIRD_PARTY_NOTICES.md"):
         if (ROOT / name).exists():
             shutil.copy2(ROOT / name, APP / name)
 
