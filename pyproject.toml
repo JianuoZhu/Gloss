@@ -3,6 +3,7 @@ name = "gloss"
 version = "0.1.0"
 description = "Gloss — 实时游戏文本翻译悬浮层：截屏 → OCR → 翻译 → 按原文排版覆盖"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "PySide6-Essentials>=6.8",
